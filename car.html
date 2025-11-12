@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental System</title>    
+  <link rel="stylesheet" href="car.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <h1 class="logo">ATRIA car service</h1>
+    </div>
+  
+    <div class="navbar-center">
+      <input type="text" placeholder="Search your car" class="search-bar">
+    </div>
+  
+    <div class="navbar-right">
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Cars</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="menu-icon">&#9776;</div> <!-- Optional hamburger -->
+    </div>    
+
+    <div id="sidebar" class="sidebar">
+      <li><a href="booking.html">Bookings</a></li>
+      <a href="#">Ask questions</a>
+      <a href="#">Address</a>
+      <a href="#">More cars</a>
+    </div>
+
+    <script>
+      const menuIcon = document.querySelector('.menu-icon');
+      const sidebar = document.getElementById('sidebar');
+    
+      menuIcon.addEventListener('click', () => {
+        if (sidebar.style.left === '0px') {
+          sidebar.style.left = '-250px';
+        } else {
+          sidebar.style.left = '0px';
+        }
+      });
+    </script>
+
+  
+
+  </header>
+
+  <!-- Navbar section -->
+<nav class="navbar">
+  <!-- navbar content -->
+</nav>
+
+<!-- Car image below navbar -->
+<img src="navbarcar.jpg" alt="Car Banner" class="car-banner">
+
+<div class="website discription">     
+  <h2>  Welcome to DilipAnna Car Service!</h2>
+
+
+  <P>We provide a wide range of vehicles from budget to luxury, And alos a omini         van for Free for day one which could be used for kidnapping ,its a nice business and also to pick up ur loved one like in the movie called huduguru "shambo shiva shambo shiva shiva shambo"  the omini picture below here is from the pushpa this van showed our society that pushpa jukega nahi sala alyas "thaggede le"   ensuring a smooth rental experience for every customer. Whether you're planning a trip or need a ride for daily use, we've got you covered. Your Trusted Car Rental Solution! Our car rental system website is designed to provide a seamless and user-friendly experience for customers looking to rent a vehicle for personal or business needs. Whether you are planning a road trip, attending a special event, or require a vehicle for a day, week, or longer, our platform makes the entire process simple, secure, and efficient. With a vast range of vehicles including economy models, luxury cars, and SUVs, users can browse, compare, and choose the vehicle that best fits their requirements and budget. Each vehicle listing includes detailed specifications such as price per day, fuel type, transmission type, number of seats, and special offers, helping users make informed decisions.
+
+     The homepage highlights top sellers and featured vehicles, allowing customers to quickly spot the most popular choices. The navigation bar at the top of the page gives access to Home, Cars, Booking, and Contact pages, ensuring that users can move around the site effortlessly. Below the navbar, a banner image introduces users to the platform’s stylish and professional design. Our booking system is integrated with real-time availability and booking confirmation features, minimizing the chances of scheduling conflicts and enhancing reliability.
+    
+    Each car listing comes with high-quality images, rental details, and promotional deals like "Day 1 Free" to attract new customers. The system supports both manual and automatic transmission vehicles and offers petrol, diesel, and electric fuel types, catering to all preferences. For added transparency, we include clear rental pricing and tax policies upfront. Users can easily register and login to their accounts to manage bookings, view past rentals, and leave feedback.
+    
+    Admins have backend access to manage vehicle inventory, update prices, and handle customer inquiries. The platform ensures secure payment gateways for online bookings, </P>
+    
+    
+    <P>supporting multiple payment options like credit cards, debit cards, UPI, and wallets. For enhanced security, user data is protected through encryption and secure authentication protocols.
+    
+    The website is built with responsive design, ensuring compatibility with all devices including smartphones, tablets, and desktops. This means customers can book cars on the go. With a clean and intuitive interface, users of all age groups and tech skills can use the site with ease. Our contact page allows users to quickly get in touch with support for any queries or help during the booking process.
+    
+    Our goal is to modernize and simplify the traditional car rental process using technology. Instead of physically visiting car agencies, users can now rent cars from the comfort of their home. The platform is also designed to scale, allowing easy addition of new vehicles, features, and locations. Whether it’s a small Maruti Omini or a premium Bugatti, our rental system ensures that the booking process remains consistent and reliable.
+    
+    In conclusion, the DilipAnna Car Service website stands as a comprehensive and reliable platform for modern car rentals, ensuring convenience, variety, and efficiency for both customers and administrators. It combines smart design, powerful features, and user-centric design to create an outstanding experience in the car rental industry.</P>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+  <div class="car-container">
+    <div class="car-card">
+        <h2>Top seller</h2>
+        <h3>OMINI</h3>
+        <img src="Maruti_Omni.webp" alt="OMINI" class="car-image">
+        <p>DAY 1 FREE</p>
+        <p>Price per day: ₹3000</p>
+        <p>Fuel Type: Diesel</p>
+        <p>Transmission: Automatic</p>
+        <p>Seats: 7</p>
+    </div>
+
+    <div class="car-card">
+        <h2>Seller</h2>
+        <h3>Fortuner</h3>
+        <img src="fortuner.webp" alt="Fortuner" class="car-image">
+        <p>Price per day: ₹5000</p>
+        <p>Fuel Type: Diesel</p>
+        <p>Transmission: Automatic</p>
+        <p>Seats: 7</p>
+    </div>
+
+    <div class="car-card">
+        <h2>Seller</h2>
+        <h3>Swift</h3>
+        <img src="swift.avif" alt="Swift" class="car-image">
+        <p>Price per day: ₹2500</p>
+        <p>Fuel Type: Petrol</p>
+        <p>Transmission: Manual</p>
+        <p>Seats: 5</p>
+    </div>
+
+    <div class="car-card">
+        <h2>Seller</h2>
+        <h3>Innova</h3>
+        <img src="Innova.webp" alt="Innova" class="car-image">
+        <p>Price per day: ₹4000</p>
+        <p>Fuel Type: Diesel</p>
+        <p>Transmission: Automatic</p>
+        <p>Seats: 8</p>
+    </div>
+</div>
+
+<div class="car-container">
+    <div class="car-card">
+        <h2>Top Class Car</h2>
+        <h3>G Wagon</h3>
+        <img src="gwagon.webp" alt="gwagon" class="car-image">
+        <p>Price per day: ₹30,000</p>
+        <p>Fuel Type: Diesel</p>
+        <p>Transmission: Automatic</p>
+        <p>Seats: 4</p>
+    </div>
+
+    <div class="car-card">
+        <h2>Top Class Car</h2>
+        <h3>Bugatti</h3>
+        <img src="bugatti.jpg" alt="Bugatti" class="car-image">
+        <p>Price per day: ₹50,000</p>
+        <p>Fuel Type: Diesel</p>
+        <p>Transmission: Automatic</p>
+        <p>Seats: 2</p>
+    </div>
+
+    <div class="car-card">
+        <h2>Top Class Car</h2>
+        <h3>BMW</h3>
+        <img src="bmw.webp" alt="bmw" class="car-image">
+        <p>Price per day: ₹25,000</p>
+        <p>Fuel Type: Petrol</p>
+        <p>Transmission: Manual</p>
+        <p>Seats: 4</p>
+    </div>
+
+    <div class="car-card">
+        <h2>Top Class Car</h2>
+        <h3>Lambo</h3>
+        <img src="lambo.webp" alt="Innova" class="car-image">
+        <p>Price per day: ₹40,000</p>
+        <p>Fuel Type: Diesel</p>
+        <p>Transmission: Automatic</p>
+        <p>Seats: 2</p>
+    </div>
+</div>
+  
+      
+  <footer>
+    <p>&copy; 2025 Car Rental System</p>
+  </footer>
+
+<div class="menu-icon">Menu</div>
+<div id="sidebar">Sidebar Content</div>
+
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const sidebar = document.getElementById('sidebar');
+
+  menuIcon.addEventListener('click', () => {
+    if (sidebar.style.left === '0px') {
+      sidebar.style.left = '-250px';
+    } else {
+      sidebar.style.left = '0px';
+    }
+  });
+</script>
+
+</body>
+</html>
+
+  <script src="car.java"></script>
+</body>
+</html>

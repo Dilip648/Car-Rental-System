@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DílipAnna Car Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-image: url('navbarcar.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            padding: 60px 0;
+            position: relative;
+            text-align: center;
+        }
+        
+        .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for form */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ATRIA Car Service</div>
+    </nav>
+    
+    <div class="container">
+        <h2>Car Booking Form</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="car">Select Car:</label>
+                <select id="car" name="car" required>
+                    <option value="SELECT CAR">- SELECT CAR</option>
+                    <option value="OMINI">- OMINI</option>
+                    <option value="BMW">- BMW</option>
+                    <option value="Fortuner">- Fortuner</option>
+                    <option value="Swift">- Swift</option>
+                    <option value="Innova">- Innova</option>
+                    <option value="G Wagon">-G Wagon</option>
+                    <option value="Bugatti">-Bugatti</option>
+                    <option value="Lambo">-Lambo</option>
+
+                    <!-- Add your car options here -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Booking Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Pickup Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+<script src="server.js"></script>
+</body>
+</html>
